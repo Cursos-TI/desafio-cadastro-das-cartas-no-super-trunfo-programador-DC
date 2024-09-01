@@ -48,5 +48,22 @@ int main() {
     printf("O pib da cidade é: %.2f bilhões\n", pib);
     printf("O número de pontos turisticos da cidade é: %d \n", pontoturistico);
 
+    // novas propriedades calculadas.
+    //O sistema agora irá gerar automaticamente a Densidade Populacional e o PIB per capita com base nos dados inseridos.
+    // Essas novas propriedades serão adicionadas às informações exibidas para cada cidade.
+
+    float populacao2;
+    float pib2;
+
+    populacao2 = populacao / area;
+    pib2 = populacao / pib;
+
+
+
+    printf("Nova propriedade calculada: \n");
+    printf("Densidade populacional: %.2f\n", populacao2);
+    printf ("Pib per capita: %.2f bilhões\n:", pib2);
+
+
     return 0;
 }
